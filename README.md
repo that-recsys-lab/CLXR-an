@@ -9,8 +9,11 @@
   - data_processing - code related to the preprocessing step for preparing data to run with our models.
   - help_functions - includes the framework's functions that are being used in all notebooks.
   - recommenders_architecture - specifies the architecture of the recommenders that were used in the paper.
-  - recommenders_training - contains code related to VAE and MLP recommenders training.
-  - CLXR-joint_training - contains code for training the CLXR-joint model to explain a specified recommender.
+  - recommenders_training - contains code related to VAE and MLP recommenders training. 
+Please do not re-train the recommendation model, as we have frozen it for explantion. 
+For CLXR, we used the same recommendation model as in LXR (the main baseline) to provide a fair comparison. 
+If you change the recommendation model, the explanation results might differ.  
+ - CLXR-joint_training - contains code for training the CLXR-joint model to explain a specified recommender.
   - CLXR-score_training - contains code for training the CLXR-score model to explain a specified recommender.
   - CLXR-tdlr_training - contains code for training the CLXR-tdlr model to explain a specified recommender.
   - LXR training contains code for training the LXR model to explain a specified recommender.
@@ -25,7 +28,9 @@
 
 To use this code, follow these steps:
 * You do not need to create any data; the datasets are already placed in their respective folders.
+* You dont need to train the recommendation model. 
 
+Just run one of these followings notebook:
 There are four notebooks named: 
 
 "CLXR-joint_training.ipynb"  
