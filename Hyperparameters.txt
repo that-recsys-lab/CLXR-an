@@ -20,7 +20,7 @@ Hyperparameters:
 	lambda_cmp_neg: 1.3486116482222403
 
 	alpha: 1
-	learning rate: 0.01
+	learning rate: 0.001
 	explainer hidden size: 128
 	batch size: 32
 
@@ -82,7 +82,16 @@ Hyperparameters:
 	batch size: 64
 
 
+LXR:
+Hyperparameters: 
 
+	lambda pos: 2.456195926869126
+	lambda neg: 0.2535186589375764
+
+	alpha: 1
+	learning rate: 0.01
+	explainer hidden size: 128
+	batch size: 64
 
 
 

@@ -13,6 +13,7 @@
   - CLXR-joint_training - contains code for training CLXR-joint model for explaining a specified recommender.
   - CLXR-score_training - contains code for training CLXR-score model for explaining a specified recommender.
   - CLXR-TDLR_training - contains code for training CLXR-score model for explaining a specified recommender.
+  - LXR training - contains code for training LXR model for explaining a specified recommender.
   - metrics - contains code related to model evaluation.
 
 ".txt" files:
