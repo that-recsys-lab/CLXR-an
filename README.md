@@ -19,7 +19,7 @@
 ".txt" files:
 "Hyperparameters.txt": contain all best hyperparameters that we found by using optuna. You dont need do this. You can just put these parameters in "CLXR training" cell.
 
-"Requirements.txt": the packages we used for this project
+"Requirements.txt": the packages we used for this project. You can run the virtual environment by "setup_env.sh"
 
 ## Usage
 
@@ -38,3 +38,5 @@ There are four notebooks named:
 
  On every notebook, please specify the "data_name" variable to be 'ML1M'/'Yahoo', and the "recommender_name" variable to be 'MLP'/'VAE'.
 You can train your own CLXR model using the aforementioned notebooks and observe the metric values for each epoch, as well as the best metric values.
+
+
