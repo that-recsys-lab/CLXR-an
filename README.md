@@ -1,4 +1,4 @@
-# CLXR-an
+# CLXR
 
 ## Folders
 
