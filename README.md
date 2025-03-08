@@ -44,6 +44,7 @@ pip install -r requirements.txt
 To use this code, follow these steps:
 * If you want to reproduce the results in Table 2 and Table 3, please run one of the aforementioned notebooks in the code folder, depending on the method. Refer to the paper for details on the differences between each method.
 
+In every notebook, set the following variables:
 ```bash
 data_name: 'ML1M' or 'Yahoo'
 recommender_name: 'MLP' or 'VAE'
