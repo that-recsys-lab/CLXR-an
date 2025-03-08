@@ -34,18 +34,17 @@ pip install -r requirements.txt
   - CLXR-score_training - contains code for training the CLXR-score model to explain a specified recommender.
   - CLXR-tdlr_training - contains code for training the CLXR-tdlr model to explain a specified recommender.
   - LXR_training - contains code for training the LXR model to explain a specified recommender.
+  - Popularity_approach -  contains code for the popularity baseline.
   - metrics - contains code related to model evaluation.
-
 
 
 
 ## Usage
 
-If you want to reproduce the results in Table 2 and Table 3, please run one of the aforementioned notebooks in the code folder, depending on the method. Refer to the paper for details on the differences between each method. Finding the best hyperparameters requires training the explainer for at least 30 trials using Optuna to optimize them. However, you do not need to perform this step, as we have already determined the best hyperparameters.
+If you want to reproduce the results in Table 2 and Table 3, please run one of the aforementioned notebooks in the code folder, depending on the method. Refer to the paper for details on the differences between each method. Finding the best hyperparameters requires training the explainer for at least 30 trials using Optuna to optimize them. However, you do not need to perform this step, as we have already determined the best hyperparameters. If you want to reproduce Fig1 in the paper, please run 'Plot.ipynb' notebook.
 
 
-
-In every notebook, set the following variables:
+In every notebook, set the following variables in cell 2:
 ```bash
 data_name: 'ML1M' or 'Yahoo'
 recommender_name: 'MLP' or 'VAE'
