@@ -33,7 +33,7 @@ pip install -r requirements.txt
   - CLXR-joint_training - contains code for training the CLXR-joint model to explain a specified recommender.
   - CLXR-score_training - contains code for training the CLXR-score model to explain a specified recommender.
   - CLXR-tdlr_training - contains code for training the CLXR-tdlr model to explain a specified recommender.
-  - LXR training contains code for training the LXR model to explain a specified recommender.
+  - LXR_training - contains code for training the LXR model to explain a specified recommender.
   - metrics - contains code related to model evaluation.
 
 
@@ -41,15 +41,17 @@ pip install -r requirements.txt
 
 ## Usage
 
-If you want to reproduce the results in Table 2 and Table 3, please run one of the aforementioned notebooks in the code folder, depending on the method. Refer to the paper for details on the differences between each method.
+If you want to reproduce the results in Table 2 and Table 3, please run one of the aforementioned notebooks in the code folder, depending on the method. Refer to the paper for details on the differences between each method. Finding the best hyperparameters requires training the explainer for at least 30 trials using Optuna to optimize them. However, you do not need to perform this step, as we have already determined the best hyperparameters.
+
+
 
 In every notebook, set the following variables:
 ```bash
 data_name: 'ML1M' or 'Yahoo'
 recommender_name: 'MLP' or 'VAE'
-use_predefined_hyperparams: 'Yes' or 'No'
+use_predefined_hyperparams: 'Yes' or 'No'  
 ```
-Training the explainer may take a few hours, depending on your server. If you don't have enough time, you can evaluate a smaller subset of users. In our experiments, we randomly selected 700 users for evaluation. However, you can choose 200 users to save time. Note that the results may not be as accurate as those reported in the paper.
+Training the explainer may take a few hours, depending on your server. If you don't have enough time, you can evaluate a smaller subset of users. In our experiments, we randomly selected 700 users for evaluation. However, you can choose 200 users to save time. Note that in this case the results may not be as accurate as those reported in the paper.
 
 
 
