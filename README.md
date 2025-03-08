@@ -2,7 +2,7 @@
 
 ## Create a virtual environment and install dependencies
 
-It is recommended to use a virtual environment to manage dependencies. Run the following commands:
+It is recommended to use a virtual environment to manage dependencies. "Requirements.txt" contains the packages we used for this project. Run the following commands:
 
 ```bash
 
@@ -25,39 +25,37 @@ pip install -r requirements.txt
 **processed_data**: contains two subfolders, one for each dataset. 
 
  **code**: contains several code notebooks:
-  - data_processing - code related to the preprocessing step for preparing data to run with our models.
+  - data_processing - code related to the preprocessing step for preparing data to run with our models. You do not need to create any data; the datasets are already placed in their respective folders.
+
   - help_functions - includes the framework's functions that are being used in all notebooks.
   - recommenders_architecture - specifies the architecture of the recommenders that were used in the paper.
-  - recommenders_training - contains code related to VAE and MLP recommenders training. 
-Please do not re-train the recommendation model, as we have frozen it for explantion. 
-For CLXR, we used the same recommendation model as in LXR (the main baseline) to provide a fair comparison. 
-If you change the recommendation model, the explanation results might differ.  
- - CLXR-joint_training - contains code for training the CLXR-joint model to explain a specified recommender.
+  - recommenders_training - contains code related to training VAE and MLP recommenders. You do not need to train the recommendation model, as we use the same recommendation setup as in the LXR paper as our main baseline. If you choose to run a new recommendation with different parameters, it may lead to slight variations in the results due to changes in the recommendations. For explanation purposes, we freeze the recommendation model.
+  - CLXR-joint_training - contains code for training the CLXR-joint model to explain a specified recommender.
   - CLXR-score_training - contains code for training the CLXR-score model to explain a specified recommender.
   - CLXR-tdlr_training - contains code for training the CLXR-tdlr model to explain a specified recommender.
   - LXR training contains code for training the LXR model to explain a specified recommender.
   - metrics - contains code related to model evaluation.
 
 
-"Hyperparameters.txt": contain all best hyperparameters that we found by using optuna. 
 
-"Requirements.txt": the packages we used for this project. 
 
 ## Usage
 
 To use this code, follow these steps:
-* You do not need to create any data; the datasets are already placed in their respective folders.
-* You dont need to train the recommendation model. We used the same recommenddation in LXR paper as our main baseline. If you wish to run a new recommendation with new parameters the results may change because the recommendation changed. For explaining, we freeze the recommendation model.
-* If you want to reproduce the results in Table 2 and Table 3, please run one of the following notebooks in the code folder, depending on the method. Refer to the paper for details on the differences between each method.
-On every notebook, please specify the "data_name" variable to be 'ML1M'/'Yahoo', the "recommender_name" variable to be 'MLP'/'VAE' and use_predefined_hyperparams as "Yes" or "No."
+* If you want to reproduce the results in Table 2 and Table 3, please run one of the aforementioned notebooks in the code folder, depending on the method. Refer to the paper for details on the differences between each method.
 
-"CLXR-joint_training.ipynb" for CLXR-joint method.
+```bash
+data_name: 'ML1M' or 'Yahoo'
+recommender_name: 'MLP' or 'VAE'
+use_predefined_hyperparams: 'Yes' or 'No'
+```
+Training the explainer may take a few hours, depending on your server. If you don't have enough time, you can evaluate a smaller subset of users. In our experiments, we randomly selected 700 users for evaluation. However, you can choose 200 users to save time. Note that the results may not be as accurate as those reported in the paper.
 
-"CLXR-score_training.ipynb" for CLXR-score method. 
 
-"CLXR-tdlr_training.ipynb" for CLXR-tdlr method.
 
- "LXR training.ipynb" for LXR method.
+
+
+
 
 
 
