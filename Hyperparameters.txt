@@ -142,39 +142,39 @@ Hyperparameters:
 ----------------------------------------- VAE ------------------------------------------
 CLXR-joint:
 Hyperparameters: 
-	lambda pos: 
-	lambda neg:  
+	lambda pos: 1.144949247798741
+	lambda neg:  0.8356285470051139
 
-	lambda_cmp_m1 = 
-	lambda_cmp_m3 = 
-	lambda_cmp_neg = 
+	lambda_cmp_m1 = 10.09614159090531
+	lambda_cmp_m3 = 6.257664655890804
+	lambda_cmp_neg = 0.14756102930532733
 
 	alpha: 1
-	learning rate: 0.01
-	explainer hidden size: 
-	batch size: 
+	learning rate: 0.001
+	explainer hidden size: 128
+	batch size: 128
 
 
 
 CLXR-score:
 Hyperparameters: 
 
-	lambda pos: 
-	lambda neg: 
+	lambda pos: 8.34930976885348
+	lambda neg: 1.9068379104210809
 
 	alpha: 1
-	learning rate: 
-	explainer hidden size: 
-	batch size: 
+	learning rate: 0.01
+	explainer hidden size: 32
+	batch size: 64
 
 
 LXR:
 Hyperparameters: 
 
-	lambda pos: 
-	lambda neg: 
+	lambda pos: 8.34930976885348
+	lambda neg: 1.9068379104210809
 
 	alpha: 1
-	learning rate: 
-	explainer hidden size: 
-	batch size: 
+	learning rate: 0.01
+	explainer hidden size: 32
+	batch size: 64
