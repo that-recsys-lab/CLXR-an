@@ -2,12 +2,6 @@ This text file describes the configurations that were used to train the CLXR's i
 All hyperparameters were found using Optuna. We used logloss and Tanh activation function in all CLXR's.
 
 
-Stop at trial with learning rate 0.00021434530854132, batch size=32,explainer hidden size=128, lambda_pos = 4.649641674665775, 
-lambda_neg = 0.38606839440483753, alpha_parameter = 1, lambda_cmp_m1 = 3.8821240625191673, lambda_cmp_m3 = 3.531695289223184,
-lambda_cmp_neg =1.3486116482222403 .Best results at epoch 22 with MPRR (raw) 23.848101265822784,MPRR (%)  26.075949367088608and Coverage with value 79.0
-
-
-
 ***************************************** ML1M ******************************************
 ------------------------------------------ MLP ------------------------------------------
 CLXR-joint:
