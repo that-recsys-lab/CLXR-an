@@ -40,7 +40,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-If you want to reproduce the results in Table 2 and Table 3, please run one of the aforementioned notebooks in the code folder, depending on the method. Refer to the paper for details on the differences between each method. Finding the best hyperparameters requires training the explainer for at least 30 trials using Optuna to optimize them. However, you do not need to perform this step, as we have already determined the best hyperparameters. If you want to reproduce Fig. 1 in the paper, please run the Plot.ipynb notebook. However, before doing so, you need to train all explainers first.
+If you want to reproduce the results in Table 2 and Table 3, please run one of the aforementioned notebooks in the code folder, depending on the method. Refer to the paper for details on the differences between each method. Finding the best hyperparameters requires training the explainer for at least 30 trials using Optuna to optimize them. However, you do not need to perform this step, as we have already determined the best hyperparameters. If you want to reproduce Fig. 1 in the paper, please run the plot.ipynb notebook. However, before doing so, you need to train all explainers first.
 
 
 In every notebook, set the following variables in cell 2:
@@ -51,7 +51,6 @@ use_predefined_hyperparams: 'Yes' or 'No'
 ```
 Training the explainer may take a few hours, depending on your server. If you don't have enough time, you can evaluate a smaller subset of users. In our experiments, we randomly selected 700 users for evaluation. However, you can choose 200 users to save time. Note that in this case the results may not be as accurate as those reported in the paper.
 
-* Important note: In our experiments, we enabled logging to W&B (wandb), which requires an API key to track and visualize experiments. When prompted, please copy and paste your API key. If you prefer not to use W&B, you can disable it by omitting wandb from your Optuna setup.
 
 
 
@@ -59,6 +58,9 @@ Training the explainer may take a few hours, depending on your server. If you do
 
 
 
+## WANDP
+
+This code uses the "Weights and Biases" library for tracking experiment parameters: For more information see [https://docs.wandb.ai/quickstart/](https://docs.wandb.ai/quickstart/). In order to train the explainer, you will need to create an account and input the API key when running the tuning section of the explainer notebooks.
 
 
 
