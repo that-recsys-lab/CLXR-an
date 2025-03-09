@@ -51,6 +51,14 @@ use_predefined_hyperparams: 'Yes' or 'No'
 ```
 Training the explainer may take a few hours, depending on your server. If you don't have enough time, you can evaluate a smaller subset of users. In our experiments, we randomly selected 700 users for evaluation. However, you can choose 200 users to save time. Note that in this case the results may not be as accurate as those reported in the paper.
 
+* Important note: In our experiments, we enabled logging to W&B (wandb), which requires an API key to track and visualize experiments. When prompted, please copy and paste your API key. If you prefer not to use W&B, you can disable it by omitting wandb from your Optuna setup.
+
+
+
+
+
+
+
 
 
 
