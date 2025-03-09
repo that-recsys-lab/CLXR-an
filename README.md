@@ -35,7 +35,6 @@ pip install -r requirements.txt
   - CLXR-tdlr_training - contains code for training the CLXR-tdlr model to explain a specified recommender.
   - LXR_training - contains code for training the LXR model to explain a specified recommender.
   - Popularity_approach -  contains code for the popularity baseline.
-  - metrics - contains code related to model evaluation.
 
 
 
