@@ -1,0 +1,6 @@
+/.git
+/CLXR
+/code/.ipynb_checkpoints
+.DS_Store
+code/*.log
+/.ipynb_checkpoints
