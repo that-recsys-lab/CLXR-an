@@ -49,7 +49,7 @@ data_name: 'ML1M' or 'Yahoo'
 recommender_name: 'MLP' or 'VAE'
 use_predefined_hyperparams: 'Yes' or 'No'  
 ```
-Training the explainer may take a few hours, depending on your server. If you don't have enough time, you can evaluate a smaller subset of users. In our experiments, we randomly selected 700 users for evaluation. However, you can choose 200 users to save time. Note that in this case the results may not be as accurate as those reported in the paper.
+Training the explainer may take a few hours, depending on your server. If you don't have enough time, you can evaluate a smaller subset of users. In our experiments, we used all test users for evaluation. However, you can choose 200 users to save time. Note that in this case the results may not be as accurate as those reported in the paper.
 
 
 
